@@ -1,0 +1,58 @@
+# avalon2-page-starter
+
+基于司徒大神的轻量级MVVM框架<a href="https://github.com/RubyLouvre/avalon.git">avalon2.0</a>搭建的一个简易的脚手架。<br/>
+
+该脚手架是基于Mobx-React的脚手架<a href="https://github.com/cbbfcd/wukong.git">Wukong</a>修改而来。<br/>
+
+采用了 avalon2.0 + webpack2 + mmRouter + HMR + dll + happypack等配置。<br/>
+
+支持打包预览、打包性能分析、性能分析网页自动生成、dll文件优化等功能。<br/>
+
+目前没有考虑IE9以下的兼容性问题。一度的纵容还不如割掉。<br/>
+
+# webpack command
+
+1. npm start 运行
+2. npm run build 生产环境打包
+3. npm run dll 运行dll配置文件，打一个dll包
+4. npm run redll 删除现有的dll文件，再重新打包
+5. npm run deploy 可发布的包，上线时建议用这个打包
+6. npm run preview 预览打包效果，需要cd ./dist 再执行。
+
+
+# how to run
+
+```
+git clone https://....
+cnpm install | npm install...
+npm run redll 
+
+```
+
+# todos list
+
+1. 移动端
+2. IE9以下的兼容(不想做)
+3. 加入状态管理器
+4. 完善一个复杂的demo
+5. ... 
+
+
+# notice
+
+由于采用了dll配置优化，在发布上线的时候需要手动把build/dist/vendor.js拷贝到打出的dist/static/下。<br/>
+同时需要修改入口文件index.html的引用地址。<br/>
+```
+<script type="text/javascript" src="/build/dist/vendor.js"></script> 生产环境下改成:
+<script type="text/javascript" src="/static/dist/vendor.js"></script> 
+```
+
+# thanks
+
+<a href="https://github.com/RubyLouvre">司徒大神</a>
+
+# author
+
+<a href="https://github.com/cbbfcd">波比小金刚</a>
+
+项目持续更新...

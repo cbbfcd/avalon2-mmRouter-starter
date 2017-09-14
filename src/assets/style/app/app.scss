@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.ms-controller{
+   visibility: hidden
+}
+
+@mixin img-sass-style{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:-1;
+}
+
+@mixin fullpage{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@mixin verticalcenter{
+	top:50%;
+	transform: translateY(-50%);
+}
+
+@mixin centerbox{
+	left:50%;
+	transform: translateX(-50%);
+}
+
+@mixin allcenter{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+}
+.root-btn{
+	padding: 5px 20px;
+	border-radius: 5px;
+	border: 1px solid #d9d9d9;
+	background-color: #f8f8f8;
+	position: relative;
+	margin-left: 20px;
+	top:20px;
+}
+
+.login-container{
+	@include fullpage;
+	.login-panel{
+		width:450px;
+		height:300px;
+		@include allcenter;
+		background-color: #f9f9f9;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around; 
+		align-items: center;
+		.login-text{
+			width:350px;
+			height:30px;
+			border-radius: 5px;
+		}
+		.login-btn{
+			width:60px;
+			height:30px;
+			background-color: steelblue;
+			border-radius: 5px;
+		}
+	}
+}
