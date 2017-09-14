@@ -1,4 +1,4 @@
-# avalon2-page-starter
+# avalon2-mmRouter-starter
 
 基于司徒大神的轻量级MVVM框架<a href="https://github.com/RubyLouvre/avalon.git">avalon2.0</a>搭建的一个简易的脚手架。<br/>
 
