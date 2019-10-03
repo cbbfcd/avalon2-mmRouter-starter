@@ -1,5 +1,7 @@
 # avalon2-mmRouter-starter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/avalon2-mmRouter-starter.svg)](https://greenkeeper.io/)
+
 基于司徒大神的轻量级MVVM框架<a href="https://github.com/RubyLouvre/avalon.git">avalon2.0</a>搭建的一个简易的脚手架。<br/>
 
 该脚手架是基于Mobx-React的脚手架<a href="https://github.com/cbbfcd/wukong.git">Wukong</a>修改而来。<br/>
